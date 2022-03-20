@@ -54,9 +54,9 @@ export default {
         if (this.rules[0].index != this.rules[1].index) {
           if (this.rules[0].value === this.rules[1].value) {
             console.log("Right...");
-            // // add class 'disabled' to component card
+            // add class 'disabled' to component card
             setTimeout(() => {
-              //   // close two card
+              // close two card
               this.$refs[
                 `card-${this.rules[0].index}`
               ][0].onEnabledDisableMode();
@@ -64,7 +64,7 @@ export default {
                 `card-${this.rules[1].index}`
               ][0].onEnabledDisableMode();
 
-              // // reset rules to []
+              // reset rules to []
               this.rules = [];
             }, 800);
             const disabledElements = document.querySelectorAll(
@@ -82,11 +82,11 @@ export default {
           } else {
             console.log("Wrong...");
             setTimeout(() => {
-              //   // close two card
+              // close two card
               this.$refs[`card-${this.rules[0].index}`][0].onFlipBackCard();
               this.$refs[`card-${this.rules[1].index}`][0].onFlipBackCard();
 
-              //   // reset rules to []
+              // reset rules to []
               this.rules = [];
             }, 800);
           }

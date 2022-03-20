@@ -1,4 +1,4 @@
-# poke-memmories
+# Poke memories game built using Vue 3
 
 ## Project setup
 ```
